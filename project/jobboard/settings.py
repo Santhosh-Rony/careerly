@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['*'] if DEBUG else [
     'localhost',
     '127.0.0.1',
     '0.0.0.0',
-    'your-app-name.onrender.com',  # Replace with your actual Render domain
+    'careerly-3dub.onrender.com',  # Actual Render domain
 ]
 
 CORS_ALLOWED_ORIGINS = [
