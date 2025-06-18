@@ -34,13 +34,14 @@ ALLOWED_HOSTS = ['*'] if DEBUG else [
     'localhost',
     '127.0.0.1',
     '0.0.0.0',
-    'careerly-3dub.onrender.com',  # Actual Render domain
+    'careerly-3dub.onrender.com',
+        # Actual Render domain
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000", 
-    "https://j0b-portal.netlify.app", # React development server
-    # Add your production frontend URL here
+    "https://j0b-portal.netlify.app",
+    "https://careerly.netlify.app", 
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -56,7 +57,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'jobs',
+    'jobs.apps.JobsConfig',
 ]
 
 MIDDLEWARE = [
