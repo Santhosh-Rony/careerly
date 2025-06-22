@@ -42,6 +42,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000", 
     "https://j0b-portal.netlify.app",
     "https://careerly.netlify.app", 
+    "https://www.careerly.site",
 ]
 
 CORS_ALLOW_CREDENTIALS = True

@@ -12,7 +12,7 @@ SUBSCRIPTION_API_URL = os.getenv('SUBSCRIPTION_API_URL', 'https://santhoshrony7.
 def notify_subscribers_on_new_job(sender, instance, created, **kwargs):
     if created:
         # Use job_link if available, else fallback to a default pattern
-        job_link = "https://j0b-portal.netlify.app"
+        job_link = "https://careerly.site"
         try:
             response = requests.post(
                 SUBSCRIPTION_API_URL,
@@ -26,7 +26,7 @@ def notify_subscribers_on_new_job(sender, instance, created, **kwargs):
 @receiver(post_save, sender=PostJobs)
 def notify_subscribers_on_new_postjob(sender, instance, created, **kwargs):
     if created:
-        job_link = "https://j0b-portal.netlify.app"
+        job_link = "https://careerly.site"
         try:
             response = requests.post(
                 SUBSCRIPTION_API_URL,
