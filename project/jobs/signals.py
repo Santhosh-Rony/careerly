@@ -5,7 +5,6 @@ from django.dispatch import receiver
 from .models import Job, PostJobs
 
 # Get subscription API URL from environment variable or use localhost for development
-# For PythonAnywhere: set SUBSCRIPTION_API_URL=https://yourusername.pythonanywhere.com
 SUBSCRIPTION_API_URL = os.getenv('SUBSCRIPTION_API_URL', 'https://santhoshrony7.pythonanywhere.com/api/notify')
 
 @receiver(post_save, sender=Job)
