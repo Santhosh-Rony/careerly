@@ -40,8 +40,8 @@ ALLOWED_HOSTS = ['*'] if DEBUG else [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://www.growdigo.com",
-    "https://growdigo.com",
+    "https://www.growdigo.in",
+    "https://growdigo.in",
     "https://growdigo.netlify.app", 
     "https://j0b-portal.netlify.app",
     "https://careerly.netlify.app", 
